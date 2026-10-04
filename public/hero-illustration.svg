@@ -1,0 +1,30 @@
+<svg width="640" height="540" viewBox="0 0 640 540" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="640" height="540" rx="40" fill="url(#bg)"/>
+  <circle cx="532" cy="112" r="86" fill="#F5B54A" fill-opacity="0.22"/>
+  <circle cx="140" cy="420" r="110" fill="#38BDF8" fill-opacity="0.16"/>
+  <rect x="90" y="110" width="460" height="300" rx="30" fill="#061A2C" fill-opacity="0.78" stroke="#D9EEFF" stroke-opacity="0.12"/>
+  <rect x="130" y="150" width="120" height="18" rx="9" fill="#F5B54A"/>
+  <rect x="130" y="190" width="250" height="16" rx="8" fill="#D9EEFF" fill-opacity="0.6"/>
+  <rect x="130" y="222" width="210" height="16" rx="8" fill="#D9EEFF" fill-opacity="0.38"/>
+  <rect x="130" y="260" width="230" height="92" rx="18" fill="#123C5A" stroke="#5CC8FF" stroke-opacity="0.5"/>
+  <path d="M179 294L219 260L258 294L299 246L338 294" stroke="#F5B54A" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="390" cy="248" r="52" fill="#F5B54A" fill-opacity="0.24"/>
+  <path d="M401 208C440 208 466 234 466 273C466 310 439 338 401 338C363 338 336 310 336 273C336 234 363 208 401 208ZM401 233C378 233 359 250 359 273C359 297 378 314 401 314C424 314 443 297 443 273C443 250 424 233 401 233Z" fill="#F5B54A"/>
+  <path d="M430 246C421 232 405 223 387 223C358 223 334 246 334 274C334 303 358 325 387 325C406 325 422 316 431 301" stroke="#0B2338" stroke-width="12" stroke-linecap="round"/>
+  <path d="M380 247H429" stroke="#0B2338" stroke-width="12" stroke-linecap="round"/>
+  <path d="M380 295H429" stroke="#0B2338" stroke-width="12" stroke-linecap="round"/>
+  <rect x="130" y="372" width="118" height="14" rx="7" fill="#D9EEFF" fill-opacity="0.42"/>
+  <rect x="260" y="372" width="92" height="14" rx="7" fill="#D9EEFF" fill-opacity="0.22"/>
+  <rect x="375" y="150" width="116" height="118" rx="18" fill="#0A2438" stroke="#5CC8FF" stroke-opacity="0.4"/>
+  <path d="M393 219L412 196L437 219L453 201L485 232H466V260H402V232H393V219Z" fill="#5CC8FF" fill-opacity="0.7"/>
+  <circle cx="424" cy="177" r="15" fill="#F5B54A"/>
+  <rect x="390" y="278" width="85" height="16" rx="8" fill="#F5B54A" fill-opacity="0.8"/>
+  <path d="M90 454C150 404 220 380 288 380C352 380 420 404 484 452" stroke="#D9EEFF" stroke-opacity="0.25" stroke-width="2" stroke-linecap="round"/>
+  <defs>
+    <linearGradient id="bg" x1="82" y1="74" x2="533" y2="474" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#061B2D"/>
+      <stop offset="0.52" stop-color="#0C3557"/>
+      <stop offset="1" stop-color="#0A1F33"/>
+    </linearGradient>
+  </defs>
+</svg>

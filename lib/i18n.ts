@@ -1,0 +1,356 @@
+export type Language = "en" | "ne";
+
+export type LocalizedText = string | { en: string; ne: string };
+
+export function resolveText(value: LocalizedText | undefined, language: Language) {
+  if (!value) return "";
+  if (typeof value === "string") return value;
+  return value[language] ?? value.en;
+}
+
+export const siteContent = {
+  en: {
+    navbar: {
+      home: "Home",
+      about: "About",
+      countries: "Countries",
+      universities: "Universities",
+      career: "Career",
+      contact: "Contact",
+      bookConsultation: "Book Consultation",
+      brandTitle: "Alpine Educational Consultancy",
+      brandSubtitle: "Study Abroad Experts",
+      openMenu: "Open navigation",
+      closeMenu: "Close navigation",
+    },
+    hero: {
+      badge: "Nepal Government Approved",
+      heading: "Study in Malta, South Korea, Cyprus, USA & Germany with expert guidance.",
+      description:
+        "Your global education journey begins with strategy — university matching, scholarship planning, visa guidance, and end-to-end support designed around your goals.",
+      primaryCta: "Book a free consultation",
+      secondaryCta: "Explore top destinations",
+      card1Label: "Fast applications",
+      card1Value: "30 days",
+      card1Description: "Average progress with our advisors.",
+      card2Label: "Visa confidence",
+      card2Value: "93%",
+      card2Description: "Student visa success rate with our support.",
+      card3Label: "Scholarship wins",
+      card3Value: "$2.4M+",
+      card3Description: "Funding identified for students in 2026.",
+      trackerLabel: "Live application tracker",
+      trackerValue: "87% of applications moved forward in 30 days",
+      planningLabel: "Planning",
+      planningValue: "Destination and university matching with timelines.",
+      supportLabel: "On-demand support",
+      supportValue: "Dedicated advisor guidance every step.",
+      nextStepLabel: "Next step",
+      nextStepValue: "Schedule your first strategy call",
+      imageAlt: "Study abroad planning illustration for Malta, South Korea, Cyprus, USA and Germany",
+    },
+    features: {
+      eyebrow: "Why students choose us",
+      heading: "Comprehensive support built around your next chapter.",
+      description:
+        "Every service is designed to make study abroad feel manageable, intelligent, and deeply personal.",
+      advisorLabel: "Advisor-led",
+      advisorValue: "Personalized plans",
+      advisorDescription: "One advisor guides your profile, deadlines, and interviews.",
+      dataLabel: "Data-driven",
+      dataValue: "Outcome-focused advice",
+      dataDescription: "Admissions, scholarships, and visa paths that match your goals.",
+      featureTitle: "End-to-end application care",
+      featureDescription:
+        "Support from first consultation to post-arrival orientation, with clear next steps and active check-ins.",
+      featureCta: "Book your plan",
+      learnMore: "Learn more",
+      card1Title: "University Shortlisting",
+      card1Description: "We match you with institutions aligned to your goals, budget, and future career path.",
+      card2Title: "Visa Strategy",
+      card2Description: "Clear, documented guidance for every stage of your student visa journey.",
+      card3Title: "Scholarship Guidance",
+      card3Description: "Unlock merit-based funding and reduce the total cost of your education.",
+      card4Title: "Career Planning",
+      card4Description: "Get profile building, SOP coaching, and post-study career insights.",
+    },
+    countriesSection: {
+      eyebrow: "Popular destinations",
+      heading: "Top study destinations for ambitious students: Malta, South Korea, Cyprus, USA & Germany.",
+      cta: "View all destinations",
+      topChoice: "Top choice",
+      visaApproval: "Visa approval",
+      scholarships: "Scholarships",
+      explore: "Explore options",
+    },
+    universitiesSection: {
+      eyebrow: "Featured universities",
+      heading: "Globally respected institutions with strong outcomes.",
+      cta: "See all universities",
+      tuition: "Tuition",
+      acceptance: "Acceptance",
+      contactAdvisor: "Contact advisor",
+    },
+    testimonials: {
+      eyebrow: "Student stories",
+      heading: "Trusted by students and families worldwide.",
+      description:
+        "Our students praise the clarity of the process, the strength of their applications, and the ongoing support through visas and arrival.",
+      ratingLabel: "Average student satisfaction score",
+      visaLabel: "Visa success rate for recent applicants",
+      cta: "Speak with a counselor",
+    },
+    blog: {
+      eyebrow: "From the blog",
+      heading: "",
+      cta: "Read more",
+      featured: "Featured",
+      readArticle: "Read article",
+    },
+    footer: {
+      title: "Alpine Educational Consultancy Pvt. Ltd",
+      description:
+        "Trusted international education advisors helping students study abroad with confidence and clarity.",
+      quickLinks: "Quick Links",
+      about: "About",
+      countries: "Countries",
+      universities: "Universities",
+      contact: "Contact",
+      contactTitle: "Contact",
+    },
+    pageShell: {
+      ctaLabel: { en: "Book consultation", ne: "सल्लाह लिनुहोस्" },
+    },
+    pages: {
+      about: {
+        eyebrow: { en: "Our story", ne: "हाम्रो कथा" },
+        title: {
+          en: "About Alpine Educational Consultancy",
+          ne: "अल्पाइन एजुकेशनल कन्सल्टन्सी बारे",
+        },
+        description: {
+          en: "A premium advisory team helping students turn global education goals into confident, successful applications.",
+          ne: "एक प्रिमियम सलाहकार टोलीले विद्यार्थीहरूलाई विश्वव्यापी शिक्षा लक्ष्यहरूलाई आत्मविश्वासपूर्ण र सफल आवेदनमा बदल्न सहयोग गर्छ।",
+        },
+        missionTitle: { en: "Mission", ne: "मिशन" },
+        missionDescription: {
+          en: "We simplify the complexity of studying abroad with strategy, empathy, and measurable support.",
+          ne: "हामी विदेश अध्ययनको जटिलतालाई रणनीति, सहानुभूति र मापनयोग्य सहयोगसँग सरल बनाउँछौं।",
+        },
+        visionTitle: { en: "Vision", ne: "दृष्टि" },
+        visionDescription: {
+          en: "To make international education accessible to every ambitious student and family.",
+          ne: "हरेक ambitious विद्यार्थी र परिवारका लागि अन्तर्राष्ट्रिय शिक्षा सजिलो बनाउने।",
+        },
+        valuesTitle: { en: "Values", ne: "मूल्यहरू" },
+        valuesDescription: {
+          en: "Integrity, transparency, excellence, and long-term partnership define how we work.",
+          ne: "ईमानदारी, पारदर्शिता, उत्कृष्टता र दीर्घकालीन साझेदारीले हाम्रो कामको तरीका परिभाषित गर्छ।",
+        },
+      },
+      contact: {
+        eyebrow: { en: "Get in touch", ne: "सम्पर्क गर्नुहोस्" },
+        title: { en: "Contact us", ne: "हामीलाई सम्पर्क गर्नुहोस्" },
+        description: {
+          en: "We’re ready to help you take the next step toward your international education journey.",
+          ne: "हामी तपाईंलाई अन्तर्राष्ट्रिय शिक्षा यात्रा को अगाडि बढ्न मद्दत गर्न तयार छौं।",
+        },
+        advisorTitle: { en: "Speak with an advisor", ne: "सलाहकारसँग कुरा गर्नुहोस्" },
+        consultationTitle: { en: "Book your consultation", ne: "आफ्नो परामर्श बुक गर्नुहोस्" },
+        consultationDescription: {
+          en: "Share your goals and we’ll help you choose the right destination, university, and next steps.",
+          ne: "आफ्नो लक्ष्य साझा गर्नुहोस् र हामी तपाईंलाई सही गन्तव्य, विश्वविद्यालय र अगाडि का कदम तय गर्न मद्दत गर्नेछौं।",
+        },
+        inquiryCta: { en: "Start your inquiry", ne: "तपाईंको जिज्ञासा सुरु गर्नुहोस्" },
+      },
+      countries: {
+        eyebrow: { en: "Countries", ne: "देशहरू" },
+        title: { en: "Study destinations", ne: "अध्ययन गन्तव्यहरू" },
+        description: {
+          en: "Compare popular countries and discover where your academic and career goals fit best.",
+          ne: "लोकप्रिय देशहरू तुलना गर्नुहोस् र तपाईंको शैक्षिक र करियर लक्ष्यहरू सबैभन्दा राम्रोसँग कहाँ फिट हुन्छन् भनेर पत्ता लगाउनुहोस्।",
+        },
+      },
+      universities: {
+        eyebrow: { en: "Universities", ne: "विश्वविद्यालयहरू" },
+        title: { en: "Featured universities", ne: "विशेष रुपले प्रस्तुत विश्वविद्यालयहरू" },
+        description: {
+          en: "Explore high-value academic institutions with strong admissions and scholarship support.",
+          ne: "मजबूत प्रवेश र छात्रवृत्ति सहयोग भएका उच्च-मूल्य शैक्षिक संस्थाहरू अन्वेषण गर्नुहोस्।",
+        },
+      },
+    },
+  },
+  ne: {
+    navbar: {
+      home: "होम",
+      about: "बारेमा",
+      countries: "देशहरू",
+      universities: "विश्वविद्यालयहरू",
+      career: "करियर",
+      contact: "सम्पर्क",
+      bookConsultation: "कन्सल्टेशन बुक गर्नुहोस्",
+      brandTitle: "अल्पाइन एजुकेशनल कन्सल्टन्सी",
+      brandSubtitle: "विदेश अध्ययन विशेषज्ञहरू",
+      openMenu: "नेभिगेशन खोल्नुहोस्",
+      closeMenu: "नेभिगेशन बन्द गर्नुहोस्",
+    },
+    hero: {
+      badge: "विश्वव्यापी विद्यार्थीहरूका लागि विश्वसनीय सलाहकार",
+      heading: "शीर्ष विश्वविद्यालयहरू, visa र छात्रवृत्तिको लागि तपाईंको सुव्यवस्थित बाटो।",
+      description:
+        "व्यक्तिगत निर्देशन, पारदर्शी योजना र व्यवहारिक सहयोगले प्रत्येक विद्यार्थीलाई आत्मविश्वासका साथ अगाडि बढ्न मद्दत गर्छ।",
+      primaryCta: "नि:शुल्क परामर्श बुक गर्नुहोस्",
+      secondaryCta: "विश्वविद्यालयहरू हेर्नुहोस्",
+      card1Label: "छिटो आवेदन",
+      card1Value: "३० दिन",
+      card1Description: "हाम्रो सलाहकारहरूसँग हाम्रो प्रगति।",
+      card2Label: "Visa आत्मविश्वास",
+      card2Value: "८२%",
+      card2Description: "हाम्रो सहयोगमा विद्यार्थी Visa सफलताप्रति।",
+      card3Label: "छात्रवृत्ति जितहरू",
+      card3Value: "$2.4M+",
+      card3Description: "२०२६ मा विद्यार्थीहरूका लागि पत्ता लगाइएको फन्डिङ।",
+      trackerLabel: "प्रत्यक्ष आवेदन ट्र्याकर",
+      trackerValue: "३० दिनभित्र ८७% आवेदन अगाडि बढ्यो",
+      planningLabel: "योजना",
+      planningValue: "समयरेखासहित विश्वविद्यालय छनोट।",
+      supportLabel: "आवश्यक सहयोग",
+      supportValue: "हरेक चरणमा समर्पित सलाहकार समर्पित सहायता।",
+      nextStepLabel: "अर्को कदम",
+      nextStepValue: "तपाईंको पहिलो रणनीतिक परामर्श तालिका",
+      imageAlt: "विदेश अध्ययन योजना illustration",
+    },
+    features: {
+      eyebrow: "विद्यार्थीहरूले हामीलाई किन छनोट गर्छन्",
+      heading: "तपाईंको अर्को अध्यायलाई घेरेर निर्माण गरिएको व्यापक सहयोग।",
+      description:
+        "हरेक सेवा विदेश अध्ययनलाई प्रबन्धनीय, बुद्धिमानी र गहन रूपमा व्यक्तिगत बनाउन डिजाइन गरिएको हो।",
+      advisorLabel: "सलाहकार-आधारित",
+      advisorValue: "व्यक्तिगत योजनाहरू",
+      advisorDescription: "एउटा सलाहकारले तपाईंको प्रोफाइल, ढिलो म्याद र अन्तर्वार्ता सञ्चालन गर्छ।",
+      dataLabel: "डेटा-आधारित",
+      dataValue: "परिणाम-मुखी सल्लाह",
+      dataDescription: "प्रवेश, छात्रवृत्ति र Visa मार्गहरू तपाईंको लक्ष्यसँग मिल्छ।",
+      featureTitle: "सम्पूर्ण आवेदन हेरचाह",
+      featureDescription:
+        "पहिलो परामर्शदेखि पोस्ट-आगमन अभिमुखीकरणसम्म, स्पष्ट अगाडि का चरण र सक्रिय जाँच-सूचना सहित सहयोग।",
+      featureCta: "तपाईंको योजना बुक गर्नुहोस्",
+      learnMore: "थप जानकारी",
+      card1Title: "विश्वविद्यालय छनौट",
+      card1Description: "हामी तपाईंलाई तपाईंको लक्ष्य, बजेट र भविष्यको करियर मार्गसँग मेल खाने संस्थामा मिलाउँछौं।",
+      card2Title: "Visa रणनीति",
+      card2Description: "छात्र Visa यात्रा प्रत्येक चरणमा स्पष्ट र कागजी सहयोग।",
+      card3Title: "छात्रवृत्ति मार्गदर्शन",
+      card3Description: "योग्य-आधारित वित्तीय सहायता खोल्नुहोस् र तपाईंको शिक्षा लागत घटाउनुहोस्।",
+      card4Title: "करियर योजना",
+      card4Description: "प्रोफाइल निर्माण, SOP कोचिङ, र पोस्ट-स्टडी करियर अन्तर्दृष्टि प्राप्त गर्नुहोस्।",
+    },
+    countriesSection: {
+      eyebrow: "लोकप्रिय गन्तव्यहरू",
+      heading: "मजबुत नतिजासहित उच्च-खोजी अध्ययन स्थानहरू।",
+      cta: "सबै गन्तव्यहरू हेर्नुहोस्",
+      topChoice: "शीर्ष विकल्प",
+      visaApproval: "Visa अनुमोदन",
+      scholarships: "छात्रवृत्ति",
+      explore: "विकल्पहरू हेर्नुहोस्",
+    },
+    universitiesSection: {
+      eyebrow: "विशेष विश्वविद्यालयहरू",
+      heading: "मजबुत परिणामहरू भएका प्रतिष्ठित अन्तर्राष्ट्रिय संस्थाहरू।",
+      cta: "सबै विश्वविद्यालयहरू हेर्नुहोस्",
+      tuition: "शिक्षा शुल्क",
+      acceptance: "स्वीकार्यता",
+      contactAdvisor: "सलाहकारलाई सम्पर्क गर्नुहोस्",
+    },
+    testimonials: {
+      eyebrow: "विद्यार्थी कथाहरू",
+      heading: "विश्वभरका विद्यार्थी र परिवारहरूद्वारा भरोसा गरिएको।",
+      description:
+        "हाम्रो विद्यार्थीहरूले प्रक्रियाको स्पष्टता, आवेदनको शक्तिशालीता र Visa र आगमनको माध्यमबाट निरन्तर सहयोगका लागि प्रशंसा गर्छन्।",
+      ratingLabel: "औसत विद्यार्थी सन्तुष्टि स्कोर",
+      visaLabel: "हालका आवेदकहरूको Visa सफलता दर",
+      cta: "काउन्सिलरसँग बोल्नुहोस्",
+    },
+    blog: {
+      eyebrow: "ब्लगबाट",
+      heading: "तपाईंको योजना तेर्सो बनाउन सहयोग गर्ने अन्तर्दृष्टिहरू।",
+      cta: "थप पढ्नुहोस्",
+      featured: "विशेष",
+      readArticle: "लेख पढ्नुहोस्",
+    },
+    footer: {
+      title: "अल्पाइन एजुकेशनल कन्सल्टन्सी प्रा. लि.",
+      description:
+        "विश्वव्यापी शिक्षा सम्बन्धी सलाहकारहरूले विद्यार्थीहरूलाई आत्मविश्वास र स्पष्टतासँग विदेश अध्ययन गर्न मद्दत गर्छन्।",
+      quickLinks: "छरितो लिङ्कहरू",
+      about: "बारेमा",
+      countries: "देशहरू",
+      universities: "विश्वविद्यालयहरू",
+      contact: "सम्पर्क",
+      contactTitle: "सम्पर्क",
+    },
+    pageShell: {
+      ctaLabel: { en: "Book consultation", ne: "सल्लाह लिनुहोस्" },
+    },
+    pages: {
+      about: {
+        eyebrow: { en: "Our story", ne: "हाम्रो कथा" },
+        title: {
+          en: "About Alpine Educational Consultancy",
+          ne: "अल्पाइन एजुकेशनल कन्सल्टन्सी बारे",
+        },
+        description: {
+          en: "A premium advisory team helping students turn global education goals into confident, successful applications.",
+          ne: "एक प्रिमियम सलाहकार टोलीले विद्यार्थीहरूलाई विश्वव्यापी शिक्षा लक्ष्यहरूलाई आत्मविश्वासपूर्ण र सफल आवेदनमा बदल्न सहयोग गर्छ।",
+        },
+        missionTitle: { en: "Mission", ne: "मिशन" },
+        missionDescription: {
+          en: "We simplify the complexity of studying abroad with strategy, empathy, and measurable support.",
+          ne: "हामी विदेश अध्ययनको जटिलतालाई रणनीति, सहानुभूति र मापनयोग्य सहयोगसँग सरल बनाउँछौं।",
+        },
+        visionTitle: { en: "Vision", ne: "दृष्टि" },
+        visionDescription: {
+          en: "To make international education accessible to every ambitious student and family.",
+          ne: "हरेक ambitious विद्यार्थी र परिवारका लागि अन्तर्राष्ट्रिय शिक्षा सजिलो बनाउने।",
+        },
+        valuesTitle: { en: "Values", ne: "मूल्यहरू" },
+        valuesDescription: {
+          en: "Integrity, transparency, excellence, and long-term partnership define how we work.",
+          ne: "ईमानदारी, पारदर्शिता, उत्कृष्टता र दीर्घकालीन साझेदारीले हाम्रो कामको तरीका परिभाषित गर्छ।",
+        },
+      },
+      contact: {
+        eyebrow: { en: "Get in touch", ne: "सम्पर्क गर्नुहोस्" },
+        title: { en: "Contact us", ne: "हामीलाई सम्पर्क गर्नुहोस्" },
+        description: {
+          en: "We’re ready to help you take the next step toward your international education journey.",
+          ne: "हामी तपाईंलाई अन्तर्राष्ट्रिय शिक्षा यात्रा को अगाडि बढ्न मद्दत गर्न तयार छौं।",
+        },
+        advisorTitle: { en: "Speak with an advisor", ne: "सलाहकारसँग कुरा गर्नुहोस्" },
+        consultationTitle: { en: "Book your consultation", ne: "आफ्नो परामर्श बुक गर्नुहोस्" },
+        consultationDescription: {
+          en: "Share your goals and we’ll help you choose the right destination, university, and next steps.",
+          ne: "आफ्नो लक्ष्य साझा गर्नुहोस् र हामी तपाईंलाई सही गन्तव्य, विश्वविद्यालय र अगाडि का कदम तय गर्न मद्दत गर्नेछौं।",
+        },
+        inquiryCta: { en: "Start your inquiry", ne: "तपाईंको जिज्ञासा सुरु गर्नुहोस्" },
+      },
+      countries: {
+        eyebrow: { en: "Countries", ne: "देशहरू" },
+        title: { en: "Study destinations", ne: "अध्ययन गन्तव्यहरू" },
+        description: {
+          en: "Compare popular countries and discover where your academic and career goals fit best.",
+          ne: "लोकप्रिय देशहरू तुलना गर्नुहोस् र तपाईंको शैक्षिक र करियर लक्ष्यहरू सबैभन्दा राम्रोसँग कहाँ फिट हुन्छन् भनेर पत्ता लगाउनुहोस्।",
+        },
+      },
+      universities: {
+        eyebrow: { en: "Universities", ne: "विश्वविद्यालयहरू" },
+        title: { en: "Featured universities", ne: "विशेष रुपले प्रस्तुत विश्वविद्यालयहरू" },
+        description: {
+          en: "Explore high-value academic institutions with strong admissions and scholarship support.",
+          ne: "मजबूत प्रवेश र छात्रवृत्ति सहयोग भएका उच्च-मूल्य शैक्षिक संस्थाहरू अन्वेषण गर्नुहोस्।",
+        },
+      },
+    },
+  },
+};
